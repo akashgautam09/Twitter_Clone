@@ -7,10 +7,11 @@
 
     .tab-underline::after {
         content: "";
-        @apply absolute left-0 -bottom-1 h-[2.7px] w-0 bg-[#3498db] transition-all duration-300;
+         @apply absolute left-0 -bottom-1 h-[2.7px] w-full bg-[#3498db]
+        /* @apply absolute left-0 -bottom-1 h-[2.7px] w-0 bg-[#3498db] transition-all duration-300; */
     }
 
-    .tab-underline:hover::after {
+    /* .tab-underline:hover::after {
         @apply w-full;
-    }
+    } */
 }
