@@ -269,9 +269,6 @@
   .ml-0 {
     margin-left: calc(var(--spacing) * 0);
   }
-  .block {
-    display: block;
-  }
   .flex {
     display: flex;
   }
@@ -283,6 +280,9 @@
   }
   .h-10 {
     height: calc(var(--spacing) * 10);
+  }
+  .h-20 {
+    height: calc(var(--spacing) * 20);
   }
   .w-3 {
     width: calc(var(--spacing) * 3);
@@ -308,26 +308,35 @@
   .w-11\/12 {
     width: calc(11/12 * 100%);
   }
+  .w-14 {
+    width: calc(var(--spacing) * 14);
+  }
+  .w-15 {
+    width: calc(var(--spacing) * 15);
+  }
   .w-20 {
     width: calc(var(--spacing) * 20);
   }
-  .w-\[9\] {
-    width: 9;
+  .w-24 {
+    width: calc(var(--spacing) * 24);
   }
-  .w-\[90\%\] {
-    width: 90%;
+  .w-28 {
+    width: calc(var(--spacing) * 28);
   }
-  .w-\[90\] {
-    width: 90;
+  .w-30 {
+    width: calc(var(--spacing) * 30);
   }
-  .w-\[93\%\] {
-    width: 93%;
+  .w-32 {
+    width: calc(var(--spacing) * 32);
   }
-  .w-\[93\] {
-    width: 93;
+  .w-\[4rem\] {
+    width: 4rem;
   }
-  .w-\[full\] {
-    width: full;
+  .w-\[6rem\] {
+    width: 6rem;
+  }
+  .w-\[7rem\] {
+    width: 7rem;
   }
   .w-fit {
     width: fit-content;
@@ -395,20 +404,6 @@
   }
   .rounded-xl {
     border-radius: var(--radius-xl);
-  }
-  .rounded-t-full {
-    border-top-left-radius: calc(infinity * 1px);
-    border-top-right-radius: calc(infinity * 1px);
-  }
-  .rounded-tr-full {
-    border-top-right-radius: calc(infinity * 1px);
-  }
-  .rounded-b-full {
-    border-bottom-right-radius: calc(infinity * 1px);
-    border-bottom-left-radius: calc(infinity * 1px);
-  }
-  .rounded-bl-full {
-    border-bottom-left-radius: calc(infinity * 1px);
   }
   .border {
     border-style: var(--tw-border-style);
@@ -663,14 +658,19 @@
       display: none;
     }
   }
+  .md\:h-10 {
+    @media (width >= 48rem) {
+      height: calc(var(--spacing) * 10);
+    }
+  }
+  .md\:w-14 {
+    @media (width >= 48rem) {
+      width: calc(var(--spacing) * 14);
+    }
+  }
   .md\:w-\[45\%\] {
     @media (width >= 48rem) {
       width: 45%;
-    }
-  }
-  .md\:w-\[55\%\] {
-    @media (width >= 48rem) {
-      width: 55%;
     }
   }
   .md\:w-\[70\%\] {
@@ -681,16 +681,6 @@
   .md\:min-w-\[30\%\] {
     @media (width >= 48rem) {
       min-width: 30%;
-    }
-  }
-  .md\:min-w-\[35\%\] {
-    @media (width >= 48rem) {
-      min-width: 35%;
-    }
-  }
-  .md\:min-w-\[55\%\] {
-    @media (width >= 48rem) {
-      min-width: 55%;
     }
   }
 }
